@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+}
+
+.nav {
+  @apply bg-[rgb(22,22,23_/_80%)] backdrop-blur-[20px];
+}
+.circle {
+  @apply h-[32px] w-[32px] inline-block rounded-[50%] border-[0.5px] border-solid border-[#c778dd];
+}
+
+.hoverText {
+  @apply  mx-4 flex gap-1 items-center list-none text-[22px] my-4 md:my-auto md:text-base relative before:content-[''] before:absolute before:w-full before:h-[0.5px] before:rounded before:bg-[#c778dd] hover:text-[#c778dd] hover:duration-700 before:origin-right before:transition-transform before:duration-[0.3s] before:ease-[ease-in-out] before:scale-x-0 before:left-0 before:bottom-0 hover:before:origin-left hover:before:scale-x-100;
+}

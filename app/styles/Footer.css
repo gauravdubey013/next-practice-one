@@ -1,0 +1,34 @@
+/* body {
+    @apply overflow-x-hidden m-0;
+  } */
+  .footer {
+    @apply text-center px-0 py-[30px];
+    background: #000300;
+    font-family: "Play", sans-serif;
+  }
+  .footer .row {
+    @apply w-full text-[gray] text-[0.8em] mx-[0%] my-[1%] px-[0%] py-[0.6%];
+  }
+  .footer .row a {
+    @apply no-underline text-[gray] transition-[0.5s] hover:text-white;
+  }
+  .footer .row ul {
+    @apply w-full;
+  }
+  .footer .row ul li {
+    @apply inline-block mx-[30px] my-0;
+  }
+  .footer .row a i {
+    @apply text-[2em] mx-[1%] my-[0%];
+  }
+  @media (max-width: 720px) {
+    .footer {
+      @apply text-center p-[5%];
+    }
+    .footer .row ul li {
+      @apply block text-center mx-0 my-2.5;
+    }
+    .footer .row a i {
+      @apply mx-[3%] my-[0%];
+    }
+  }
